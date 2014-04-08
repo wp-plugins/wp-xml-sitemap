@@ -7,7 +7,7 @@ Requires at least: 3.0
 Tested up to: 3.8
 License: GPLv2 or later
 
-An easy way to add Xml sitemap in your website .It can be especially helpful if your content is not easily discoverable by our crawler (such as pages accessible only through a form).
+An easy way to add Xml sitemap in your website .It can be especially helpful if your content is not easily discoverable by the crawler. 
 
 == Description ==
 
@@ -62,7 +62,7 @@ A: We recently enabled Sitemap cross-submissions, which means that you can put y
 
 == Screenshots ==
 1. WP XML Sitemap plugin appears after activation in dashboard menu section  .
-1. WP XML Sitemap plugin appears after activation in WP XML Sitemap setting section  .
+2. WP XML Sitemap plugin appears after activation in WP XML Sitemap setting section  .
 
 
 == Changelog ==
