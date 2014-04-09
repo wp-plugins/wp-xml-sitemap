@@ -1,8 +1,8 @@
  === WP XML Sitemap ===
 Contributors: vivacityinfotech.jaipur
 Donate link: http://tinyurl.com/owxtkmt
-Tags: XML Sitemap , WP  Xml Sitemap , Google XML Sitemap , generate Sitemap , Sitemap , Google News Sitemap , 
-WordPress XML Sitemap , Google XML , Google Sitemap ,  Sitemap Seo .
+Tags: Google, SEO,Bing,google sitemaps , WP  Xml Sitemap , Google XML Sitemap , generate Sitemap , Sitemap , Google News Sitemap , 
+WordPress XML Sitemap , Google XML , Google Sitemap ,  Sitemap Seo,search engine,google indexing,indexing, index
 Requires at least: 3.0
 Tested up to: 3.8
 License: GPLv2 or later
