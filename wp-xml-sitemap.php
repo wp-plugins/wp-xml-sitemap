@@ -26,7 +26,7 @@ License: GNU
 add_filter('plugin_row_meta', 'RegisterPluginLinks_xmlsite',10, 2);
 function RegisterPluginLinks_xmlsite($links, $file) {
 	if ( strpos( $file, 'wp-xml-sitemap.php' ) !== false ) {
-		$links[] = '<a href="https://wordpress.org/plugins/wp-google-analytics-scripts/faq/">FAQ</a>';
+		$links[] = '<a href="https://wordpress.org/plugins/wp-xml-sitemap/faq/">FAQ</a>';
 		$links[] = '<a href="mailto:support@vivacityinfotech.com">Support</a>';
 		$links[] = '<a href="http://tinyurl.com/owxtkmt">Donate</a>';
 	}
