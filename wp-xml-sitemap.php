@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: WP XML Sitemap 
-Plugin URI: http://vivacityinfotech.com/
+Plugin URI: http://www.vivacityinfotech.net
 Description: WPSitemap.Xml  is an XML file that lists the URLs for a site. It allows webmasters to include additional information about each URL: when it was last updated, how often it changes, and how important it is in relation to other URLs in the site. This allows search engines to crawl the site more intelligently.
 Version: 1.0
-Author URI: http://vivacityinfotech.com/
+Author URI: http://www.vivacityinfotech.net
 Requires at least: 3.8
 License: GNU
   ---------------------------------------------------------------------------------------------
@@ -23,6 +23,18 @@ License: GNU
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+add_filter('plugin_row_meta', 'RegisterPluginLinks',10, 2);
+function RegisterPluginLinks($links, $file) {
+	if ( strpos( $file, 'wp-google-analytics-scripts.php' ) !== false ) {
+		$links[] = '<a href="https://wordpress.org/plugins/wp-google-analytics-scripts/faq/">FAQ</a>';
+		$links[] = '<a href="mailto:support@vivacityinfotech.com">Support</a>';
+		$links[] = '<a href="http://tinyurl.com/owxtkmt">Donate</a>';
+	}
+	return $links;
+}
+
+
+
 		if (!defined('ABSPATH')) die("Aren't you supposed to come here via WP-Admin?");
 
 		if ( ! defined( 'WP_CONTENT_URL' ) )
