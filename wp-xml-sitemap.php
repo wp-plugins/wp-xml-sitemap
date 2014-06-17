@@ -23,8 +23,8 @@ License: GNU
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-add_filter('plugin_row_meta', 'RegisterPluginLinks',10, 2);
-function RegisterPluginLinks($links, $file) {
+add_filter('plugin_row_meta', 'RegisterPluginLinks_xmlsite',10, 2);
+function RegisterPluginLinks_xmlsite($links, $file) {
 	if ( strpos( $file, 'wp-xml-sitemap.php' ) !== false ) {
 		$links[] = '<a href="https://wordpress.org/plugins/wp-google-analytics-scripts/faq/">FAQ</a>';
 		$links[] = '<a href="mailto:support@vivacityinfotech.com">Support</a>';
