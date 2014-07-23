@@ -3,7 +3,7 @@
 Plugin Name: WP XML Sitemap 
 Plugin URI: http://www.vivacityinfotech.net
 Description: WPSitemap.Xml  is an XML file that lists the URLs for a site. It allows webmasters to include additional information about each URL: when it was last updated, how often it changes, and how important it is in relation to other URLs in the site. This allows search engines to crawl the site more intelligently.
-Version: 1.0
+Version: 1.1
 Author URI: http://www.vivacityinfotech.net
 Requires at least: 3.8
 License: GNU
@@ -83,7 +83,8 @@ function sm_setting_link() {
     	if (!get_option('sm_Category')) { $sm_Category = 'NotInclude';} else {	$sm_Category = get_option('sm_Category'); }
     	if (!get_option('sm_tags')) { $sm_tags = 'NotInclude';} else {	$sm_tags = get_option('sm_tags'); }
     	if (!get_option('sm_last_change')) { $sm_last_change = 'Disable';} else {	$sm_last_change = get_option('sm_last_change'); }
-
+    	if (!get_option('sm_last_change_new')) { $sm_last_change = 'Disable';} else {	$sm_last_change_new = get_option('sm_last_change_new');
+    	 }
     	$sm_xml_text =  '<?xml version="1.0" encoding="UTF-8"?>'."\n";
     	$sm_xml_text .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'."\n";
 
@@ -373,11 +374,28 @@ function sm_setting_link() {
 	       </td>
 	  </tr>
 	
+	
+<tr>
+	       <td width="80%"> Add a sitemap link in the footer  <td>
+		    <?php
+			 if (!get_option('sm_last_change_new')) { $sm_last_change_new = 'Disable';}
+			 else {	$sm_last_change_new = get_option('sm_last_change_new'); }
+		    ?>
+		    <select name="sm_last_change_new" id="sitexml_option" type="text" value="<?php echo $sm_last_change_new ?>" />
+		    <option value="Disable" <?php if($sm_last_change_new=="Disable") {echo 'selected';}?>>disable</option>
+		    <option value="Enable" <?php if($sm_last_change_new=="Enable") {echo 'selected';}?>>enable</option>
+		    </select>
+	       </td>
+	  </tr>	
+	
+
+	
+	
      </table>
       
    
      <input type="hidden" name="action" value="update" />
-     <input type="hidden" name="page_options" value="home_priority,general_priority,sitexml_option,sm_generaloption,xmlfile_path,sm_frequency, sm_Category, sm_tags,sm_last_change" />
+     <input type="hidden" name="page_options" value="home_priority,general_priority,sitexml_option,sm_generaloption,xmlfile_path,sm_frequency, sm_Category, sm_tags,sm_last_change,sm_last_change_new" />
 
      <p style="margin-top: 20px;">
      <input type="submit" value="<?php _e('Save Changes'); ?>" / id="submit">
@@ -402,3 +420,22 @@ function sm_setting_link() {
 	add_action ( 'publish_page', 'created_sitemap_xml' );
 	add_action ( 'trashed_post', 'created_sitemap_xml' );
 	?>
+
+
+<?php 
+
+
+ $sitemapLink=get_option('sm_last_change_new');
+
+  function myscript() {?>
+
+     <p align="center" style="text-align:center"><a href="<?php bloginfo('url');?>/wpsitemap.xml">XML Sitemap</a></p>
+
+ <?php }
+
+if($sitemapLink == "Enable"){
+
+  add_action( 'wp_footer', 'myscript' );
+ }
+ 
+?>

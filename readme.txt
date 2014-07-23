@@ -4,7 +4,7 @@ Donate link: http://tinyurl.com/owxtkmt
 Tags: Google, SEO,Bing,google sitemaps , WP  Xml Sitemap , Google XML Sitemap , generate Sitemap , Sitemap , Google News Sitemap , 
 WordPress XML Sitemap , Google XML , Google Sitemap ,  Sitemap Seo,search engine,google indexing,indexing, index
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 3.9.1
 License: GPLv2 or later
 
 An easy way to add Xml sitemap in your website .It can be especially helpful if your content is not easily discoverable by the crawler. 
@@ -66,7 +66,8 @@ A: We recently enabled Sitemap cross-submissions, which means that you can put y
 
 
 == Changelog ==
-
+= 1.1 =
+* Added Feture for link of sitemap in the footer
 = 1.0 =
 * Initial release
 
