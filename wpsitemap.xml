@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    		 <url>
+	  		<loc>http://192.168.1.41/wordpress/hello-world/</loc><lastmod>2014-07-22</lastmod><changefreq>hourly</changefreq>
+	       <priority>0.5</priority></url>
+
+    		 <url>
+	  		<loc>http://192.168.1.41/wordpress/sample-page/</loc><lastmod>2014-07-22</lastmod><changefreq>hourly</changefreq>
+	       <priority>0.5</priority></url>
+</urlset>
