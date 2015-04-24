@@ -5,6 +5,7 @@ Plugin URI: http://www.vivacityinfotech.net
 Description: WPSitemap.Xml  is an XML file that lists the URLs for a site. It allows webmasters to include additional information about each URL: when it was last updated, how often it changes, and how important it is in relation to other URLs in the site. This allows search engines to crawl the site more intelligently.
 Version: 1.1
 Author URI: http://www.vivacityinfotech.net
+* Author Email: support@vivacityinfotech.net
 Requires at least: 3.8
 License: GNU
   ---------------------------------------------------------------------------------------------
