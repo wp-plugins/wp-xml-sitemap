@@ -2,10 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     		 <url>
-	  		<loc>http://192.168.1.41/wordpress/hello-world/</loc><lastmod>2014-07-22</lastmod><changefreq>hourly</changefreq>
-	       <priority>0.5</priority></url>
+	  		<loc>http://thevivapower.com/fitness/activity-5/</loc></url>
 
     		 <url>
-	  		<loc>http://192.168.1.41/wordpress/sample-page/</loc><lastmod>2014-07-22</lastmod><changefreq>hourly</changefreq>
-	       <priority>0.5</priority></url>
+	  		<loc>http://thevivapower.com/fitness/asd/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/tetst/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/2015/08/27/testing/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/events/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/members/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/test/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/shop/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/cart/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/checkout/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/my-account/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/2015/08/25/hello-world/</loc></url>
+
+    		 <url>
+	  		<loc>http://thevivapower.com/fitness/sample-page/</loc></url>
 </urlset>
