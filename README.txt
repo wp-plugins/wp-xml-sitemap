@@ -68,6 +68,7 @@ A: We recently enabled Sitemap cross-submissions, which means that you can put y
 == Changelog ==
 = 1.2 =
 * Change ui of the plugin dashboard.
+* Compatible with Wordpress 4.3.
 = 1.1 =
 * Added Feture for link of sitemap in the footer
 = 1.0 =
